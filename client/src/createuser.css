@@ -1,0 +1,52 @@
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(1, 9, 16, 0.168);
+    width: 100%;
+
+}
+form {
+    background-color: #a7121270;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+    box-shadow:#2f0303e1;
+    align-items: center;
+    justify-content: center;
+}
+
+form h2 {
+    margin-bottom: 20px;
+}
+
+
+form .mb-2 {
+    margin-bottom: 15px;
+}
+form input{
+    display: inline-block;
+    width:50px;
+    margin-bottom: 5px;    
+}
+form label {
+    display: inline-block;
+    width: 150px;  /* Set a fixed width for labels */
+    margin-bottom: 5px;
+}
+form .form-control {
+    border-radius: 5px;
+}
+
+form .btn-success {
+    margin-top: 28px;
+    align-items: center;
+    margin-left:70px;
+    margin-right:50px;
+    width:300px;
+    border-radius: 5px;
+    background-color: rgb(43, 215, 43);
+}
