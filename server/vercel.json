@@ -1,0 +1,15 @@
+{
+    "name": "art_restoration",
+    
+    "version": 2, 
+    
+    "builds": [
+      { "src": "server/index.js", "use": "@vercel/node" },
+      { "src": "client/src/App.jsx", "use": "@vercel/node" }
+    ],
+  
+    "routes": [
+      { "src": "/(.*)", "dest": "/server/index.js" }
+    ]
+  }
+  
