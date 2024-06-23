@@ -6,10 +6,16 @@ const path=require('path')
 const UserModel=require('./models/Users')
 const app=express()
 
-app.use(cors())
+app.use(cors(
+    {
+        origin:["https://artrestoration-qgs231a69-outtouniverses-projects.vercel.app/"],
+        methods:["POST","GET","PUT","DELETE"],
+        credentials:true
+    }
+));
 app.use(express.json())
 app.use('/public', express.static(path.join(__dirname, 'public')));
-mongoose.connect("mongodb://127.0.0.1:27017/CRUD")
+mongoose.connect("mongodb+srv://aakub1096:KlwWqgPMlnEf3K2u@cluster0.ixkgp7g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
